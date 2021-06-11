@@ -10,35 +10,49 @@
         <link rel="stylesheet" href="css/normalize.css">
         <!-- Google Fonts Lato -->
         <style>@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');</style>
+        <!-- Hamburger Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- CSS file -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <nav class="nav">
+            <!-- Top Navigation Menu -->
+            <!-- <nav class="topnav">
                 <div class="nav-name">
-                    <a href="#"><p>Behar Gjidija</p></a>
+                    <a href="#home" class="active">Behar Gjidija</a> -->
+                    <!-- Navigation links (hidden by default) -->
+                <!-- </div>
+                <div class="hamburger">
+                    <div id="myLinks">
+                        <a href="#about-me">About Me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div> -->
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
                 </div>
-                <div class="nav-toggle">
+            </nav> -->
 
-                </div>
+            <nav>
+                <ul class="menu">
+                    <div class="menu-name">
+                        <li class="name"><a href="#">Creative Mind Agency</a></li>
+                    </div>
+                    <div class="menu-items">
+                        <li class="item"><a href="#">Home</a></li>
+                        <li class="item"><a href="#">About</a></li>
+                        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                    </div>
+                </ul>
             </nav>
+
+
         </header>
 
-        <!-- Top Navigation Menu -->
-<div class="topnav">
-    <a href="#home" class="active">Logo</a>
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-<script src="js/app.js"></script>
+        <!-- JS file -->
+        <script src="js/app.js"></script>
     </body>
 </html>
