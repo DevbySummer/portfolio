@@ -5,34 +5,47 @@
     margin: 0;
 }
 body {
-    display: grid;
-    font-family: 'Lato', Arial, Helvetica;
+    background: #fff;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
+    color: rgb(52, 52, 52);
 }
+
+/* <<<<<<<< Header >>>>>>>> */
+
+/* Navigation */
 nav {
-    background: rgb(240, 240, 240);
+    background: transparent;
     padding: 0 15px;
 }
 a {
-    color: rgb(26, 26, 26);
+    color: rgb(52, 52, 52);
     text-decoration: none;
 }
 .menu {   
     list-style-type: none;
 }
-.name {
-    font-size: 20px;
+/* My Name */
+.logo {
+    font-size: 30px;
     padding: 7.5px 10px 7.5px 0;
 }
+.logo a {
+    transition: .2s;
+}
+.logo a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+.logo a:active {
+    transform: scale(.9);
+}
+.logo a:visited {
+    transform: scale(1);
+}
+/* --------- */
 .item {
     padding: 10px;
-}
-.item.button {
-    padding: 9px 5px;
-}
-.item:not(.button) a:hover,
-.item a:hover::after {
-    color: #ccc;
 }
 
 /* Mobile menu */
@@ -42,29 +55,52 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.menu .menu-name li a,
-.menu .menu-items li a {
+.menu li a {
     display: block;
-    padding: 15px 5px;
+    padding: 10px 5px;
 }
-/* .menu li a {
-    display: block;
-    padding: 15px 5px;
-} */
-.menu-items .toggle {
+/* hamburger menu */
+.toggle {
     order: 1;
-    font-size: 20px;
-    background-color: black
+    font-size: 30px;
+    transition: .2s;
 }
+.toggle:hover {
+    transform: scale(1.2);
+    color: black;
+}
+.toggle a:active {
+    transform: scale(.9);
+}
+/* --------- */
 .item.button {
     order: 2;
 }
+/* Navigation links */
 .item {
     order: 3;
     width: 100%;
     text-align: center;
     display: none;
+    font-size: 22px;
 }
+.item a {
+    transition: .2s;
+}
+.item a:hover {
+    transform: scale(1.1);
+    color: black;
+    border: 1px solid rgb(65, 65, 65);
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+.item a:active {
+    transform: scale(.9);
+}
+/* --------- */
 .active .item {
     display: block;
+}
+.button.secondary { /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
 }
