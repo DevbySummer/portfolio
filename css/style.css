@@ -1,12 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-body {
-    display: grid;
-}
-/* I used W3schools for the hamburger menu code snippet below "https://www.w3schools.com/howto/howto_js_mobile_navbar.asp"
-
 /* Basic styling */
 * {
     box-sizing: border-box;
@@ -14,7 +5,8 @@ body {
     margin: 0;
 }
 body {
-    font-family: sans-serif;
+    display: grid;
+    font-family: 'Lato', Arial, Helvetica;
     font-size: 16px;
 }
 nav {
