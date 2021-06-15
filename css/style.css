@@ -88,7 +88,7 @@ a {
     font-size: 22px;
 }
 .item a {
-    transition: .2s;
+    transition: transform .2s;
 }
 .item a:hover {
     transform: scale(1.1);
@@ -147,8 +147,14 @@ h1:after
     margin-bottom: 10px;
 }
 .text-content_social-media-links a{
-    font-size: 20px;
+    font-size: 40px;
     color: #1995ad;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: transform .2s;
+}
+.text-content_social-media-links a i:hover {
+    transform: scale(1.1);
 }
 
 /* Projects Section */
@@ -192,6 +198,7 @@ main {
 /* Footer Section */
 footer {
     background: rgba(188,186,190, 0.1);
+    margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px #a1d6e2 solid;
@@ -201,4 +208,11 @@ footer {
 }
 .footer-social-links a {
     color: #1995ad;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: transform .2s;
+}
+.footer-social-links a i:hover {
+    transform: scale(1.1);
 }
