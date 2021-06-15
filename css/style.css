@@ -5,7 +5,7 @@
     margin: 0;
 }
 body {
-    background: #fff;
+    background: #f1f1f2;
     font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     color: rgb(52, 52, 52);
@@ -15,8 +15,11 @@ body {
 
 /* Navigation */
 nav {
-    background: transparent;
-    padding: 0 15px;
+    background: rgba(188,186,190, 0.1);
+    /* padding: 0 15px; */
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px #a1d6e2 solid;
 }
 a {
     color: rgb(52, 52, 52);
@@ -28,7 +31,7 @@ a {
 /* My Name */
 .logo {
     font-size: 30px;
-    padding: 7.5px 10px 7.5px 0;
+    padding: 0 10px 7.5px 0;
 }
 .logo a {
     transition: .2s;
@@ -103,4 +106,99 @@ a {
 }
 .button.secondary { /* divider between buttons and menu links */
     border-bottom: 1px #444 solid;
+}
+
+/* About Me section */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.about-me_image .avatar {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-me_text-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+h1 {
+    font-size: 38px;
+}
+h1:after
+{
+    display: block;
+    height: 2px;
+    background-color: #1995ad;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.text-content_main {
+    padding-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+}
+.text-content_social-media-links {
+    margin-bottom: 10px;
+}
+.text-content_social-media-links a{
+    font-size: 20px;
+    color: #1995ad;
+}
+
+/* Projects Section */
+main {
+    display: grid;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: rgba(25,149,173, 0.1); */
+}
+.projects:nth-child(odd) {
+    background-color: rgba(25,149,173, 0.1);
+}
+.project-name {
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+.project-name h2 {
+    font-size: 30px;
+}
+.project-image img{
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+.project-description {
+    width: 95%;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+}
+/* Footer Section */
+footer {
+    background: rgba(188,186,190, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px #a1d6e2 solid;
+}
+.footer-social-links {
+    text-align: center;
+}
+.footer-social-links a {
+    color: #1995ad;
 }
