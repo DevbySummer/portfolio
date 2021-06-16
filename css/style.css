@@ -176,6 +176,8 @@ main {
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border: 1px solid rgba(25,149,173, 0.7);
+        border-radius: 10px;
     /* background-color: rgba(25,149,173, 0.1); */
 }
 .projects:nth-child(odd) {
