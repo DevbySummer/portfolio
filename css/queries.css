@@ -10,10 +10,12 @@
         justify-content: flex-end;
     }
     .menu .logo {
-        margin-right: auto;
+        
     }
     .logo {
         order: 0;
+        margin-right: auto;
+        text-align: center;
     }
     nav ul {
         width: 95%;
