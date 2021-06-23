@@ -38,10 +38,11 @@ a {
     padding: 0 10px 7.5px 0;
 }
 .logo a {
-    transition: .2s;
+    transition: transform .2s;
 }
 .logo a:hover {
     color: white;
+    transform: scale(1.05);
 }
 .logo a:active {
     transform: scale(.9);

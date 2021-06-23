@@ -9,8 +9,13 @@
 
         justify-content: flex-end;
     }
-    .menu .logo {
-        
+    .menu li:first-child a {
+        padding-left: 0;
+    }
+    .menu li:nth-last-child(2),
+    .menu li:nth-last-child(2) a {
+        margin-right: 0;
+        padding-right: 0;
     }
     .logo {
         order: 0;
@@ -19,6 +24,9 @@
         line-height: 1;
         align-self: flex-end;
     }
+    /* nav {
+        margin-right: -15px;
+    } */
     nav ul {
         width: 95%;
         margin: auto;
@@ -44,7 +52,7 @@
     /* About Me */
     .about-me {
         /* flex-direction: row; */
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
         display: grid;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -99,6 +107,10 @@
 }
 
 @media(min-width: 1024px) {
+    body {
+        max-width: 1100px;
+        margin: auto;
+    }
     /* >>>>>>> Header <<<<<<<< */
     /* About Me */
     .about-me {
