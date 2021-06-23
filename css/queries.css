@@ -16,6 +16,8 @@
         order: 0;
         margin-right: auto;
         text-align: center;
+        line-height: 1;
+        align-self: flex-end;
     }
     nav ul {
         width: 95%;
@@ -28,13 +30,17 @@
         display: block; 
         width: auto;
     }
-    .menu li a {
+    .menu li a:nth-of-type(3) {
         padding-right: 0;
     }
     .toggle {
         display: none;
     }
-
+    .item a:hover {
+        color: white;
+        border: none;
+        background-color: transparent;
+    }
     /* About Me */
     .about-me {
         /* flex-direction: row; */
@@ -61,16 +67,17 @@
     .container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 15px;
+        grid-gap: 35px;
         width: 95%;
         margin: auto;
     }
     .projects {
         padding-bottom: 20px;
-        border: 1px solid rgba(25,149,173, 0.7);
+        /* border: 1px solid rgba(25,149,173, 0.7); */
         border-radius: 10px;
         transition: transform .2s;
-        background-color: rgba(25,149,173, 0.1);
+        /* background-color: rgba(25,149,173, 0.1); */
+        background-color: rgba(0, 0, 0, 0.1);
     }
     .projects:hover {
         transform: scale(1.05);
@@ -88,5 +95,58 @@
     }
     footer {
         margin-top: 50px;
+    }
+}
+
+@media(min-width: 1024px) {
+    /* >>>>>>> Header <<<<<<<< */
+    /* About Me */
+    .about-me {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        padding-top: 80px;
+    }
+     .about-me_image .avatar {
+        width: 91%;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 45px;
+        margin-top: 0;
+    }
+    .about-me_text-content {
+        width: 95%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .text-content_main {
+        padding-bottom: 15px;
+        font-size: 22px;
+    }
+    .text-content_social-media-links a{
+        font-size: 50px;
+    }
+    .text-content_social-media-links {
+        margin-bottom: 0;
+    }
+    /* >>>>>>> Projects Section <<<<<<<< */
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        grid-gap: 65px;
+    }
+    .project-image img{
+        width: 100%;
+        border-radius: 10px;
+        padding-bottom: 15px;
+    }
+    .project-description {
+        font-size: 22px;
+    }
+    footer {
+        margin-top: 70px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .footer-social-links a {
+        font-size: 50px;
     }
 }

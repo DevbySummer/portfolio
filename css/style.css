@@ -6,9 +6,11 @@
 }
 body {
     background: #f1f1f2;
+    background-color: #626d71; /* slate */
     font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
-    color: rgb(52, 52, 52);
+    /* color: rgb(52, 52, 52); */
+    color: #cdcdc0;
 }
 
 /* <<<<<<<< Header >>>>>>>> */
@@ -16,13 +18,15 @@ body {
 /* Navigation */
 nav {
     background: rgba(188,186,190, 0.1);
+    background-color: 	rgba(0, 0, 0, 0.1);
     /* padding: 0 15px; */
     padding-top: 0;
     padding-bottom: 0;
-    border-bottom: 1px #a1d6e2 solid;
+    /* border-bottom: 1px #a1d6e2 solid; */
 }
 a {
-    color: rgb(52, 52, 52);
+    /* color: rgb(52, 52, 52); */
+    color: #cdcdc0;
     text-decoration: none;
 }
 .menu {   
@@ -37,14 +41,14 @@ a {
     transition: .2s;
 }
 .logo a:hover {
-    transform: scale(1.05);
-    color: black;
+    color: white;
 }
 .logo a:active {
     transform: scale(.9);
+    color: #cdcdc0;
 }
 .logo a:visited {
-    transform: scale(1);
+    /* color: #cdcdc0; */
 }
 /* --------- */
 .item {
@@ -66,14 +70,15 @@ a {
 .toggle {
     order: 1;
     font-size: 30px;
-    transition: .2s;
+    transition: transform .2s;
 }
 .toggle:hover {
     transform: scale(1.2);
-    color: black;
+    color: white;
 }
 .toggle a:active {
     transform: scale(.9);
+    color: #cdcdc0;
 }
 /* --------- */
 .item.button {
@@ -126,6 +131,7 @@ a {
     margin: auto;
 }
 h1 {
+    color: #ddbc95; /* Latte */
     font-size: 38px;
     transition: .2s
 }
@@ -136,11 +142,15 @@ h1:after
 {
     display: block;
     height: 2px;
-    background-color: #1995ad;
+    /* background-color: #1995ad; */
+    background-color: #ddbc95;
     content: " ";
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
+}
+h2 {
+    color: #ddbc95;
 }
 .text-content_main {
     padding-bottom: 15px;
@@ -152,7 +162,8 @@ h1:after
 }
 .text-content_social-media-links a{
     font-size: 40px;
-    color: #1995ad;
+    /* color: #1995ad; */
+    color: #b38867;
     padding-left: 20px;
     padding-right: 20px;
     transition: transform .2s;
@@ -176,12 +187,12 @@ main {
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid rgba(25,149,173, 0.7);
-        border-radius: 10px;
+    /* border: 1px solid rgba(25,149,173, 0.7); */
+    /* border-radius: 10px; */
     /* background-color: rgba(25,149,173, 0.1); */
 }
 .projects:nth-child(odd) {
-    background-color: rgba(25,149,173, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .project-name {
     padding-bottom: 30px;
@@ -203,17 +214,19 @@ main {
 }
 /* Footer Section */
 footer {
-    background: rgba(188,186,190, 0.1);
+    /* background: rgba(188,186,190, 0.1); */
+    background-color: 	rgba(0, 0, 0, 0.1);
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-top: 1px #a1d6e2 solid;
+    /* border-top: 1px #a1d6e2 solid; */
 }
 .footer-social-links {
     text-align: center;
 }
 .footer-social-links a {
-    color: #1995ad;
+    /* color: #1995ad; */
+    color: #b38867; /* Coffee */
     font-size: 40px;
     padding-left: 20px;
     padding-right: 20px;
