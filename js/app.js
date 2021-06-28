@@ -19,6 +19,4 @@ function toggleMenu() {
 /* Event Listener */
 toggle.addEventListener("click", toggleMenu, false);
 
-/* baguetteBox  */
-
-baguetteBox.run('.gallery');
+/* Javascript Functionality  */
