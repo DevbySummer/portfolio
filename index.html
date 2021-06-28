@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="vendors/css/all.css">
+        <!-- baguetteBox -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css">
         <!-- CSS file -->
         <link rel="stylesheet" href="css/style.css">
         <!-- CSS file media query -->
@@ -61,7 +63,7 @@
                     <a href="https://devbysummer.github.io/Employee-Directory/" target="_blank"><img src="img/Employee-Directory-image.png" alt="" target="_blank"></a>
                 </div>
                 <div class="project-description">
-                        Creating an employee directory using Javascript by communicating with a third-party API.
+                    <p>Creating an employee directory using Javascript by communicating with a third-party API.</p>
                 </div>
             </div>
             <!-- Project 2 -->
@@ -73,7 +75,7 @@
                     <a href="https://devbysummer.github.io/WebApp-Dashboard/"><img src="img/WebApp-Dashboard-image.png" alt="" target="_blank"></a>
                 </div>
                 <div class="project-description">
-                        Web dashboard complete with Javascript driven charts and graphs with the use of HTML and CSS for design.
+                    <p>Web dashboard complete with Javascript driven charts and graphs with the use of HTML and CSS for design.</p>
                 </div>
             </div>
             <!-- Project 3 -->
@@ -85,7 +87,7 @@
                     <a href="https://devbysummer.github.io/techdegree-project-6/"><img src="img/Wheel-of-Success-image.png" alt="" target="_blank"></a>
                 </div>
                 <div class="project-description">
-                        Using Javascript to create a random phrase so players can try and guess by entering different letters into the Game Show App.
+                    <p>Using Javascript to create a random phrase so players can try and guess by entering different letters into the Game Show App.</p>
                 </div>
             </div>
             <!-- Project 4 -->
@@ -97,7 +99,7 @@
                     <a href="https://devbysummer.github.io/Travel-Agency/" target="_blank"><img src="img/Travel-Agency-image.png" alt="" target="_blank"></a>
                 </div>
                 <div class="project-description">
-                    Used HTML and CSS to create a web page.
+                    <p>Used HTML and CSS to create a web page.</p>
                 </div>
             </div>
         </main>
@@ -110,6 +112,13 @@
         </footer>
 
         <!-- JS file -->
-        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <!-- Javascript Interactive Photo Gallery Functionality -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.js" async></script>
+        <script>
+            window.addEventListener('load', function() {
+              baguetteBox.run('.gallery');
+            });
+            </script>
     </body>
 </html>

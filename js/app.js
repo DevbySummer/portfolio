@@ -1,13 +1,3 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
  
@@ -28,3 +18,7 @@ function toggleMenu() {
  
 /* Event Listener */
 toggle.addEventListener("click", toggleMenu, false);
+
+/* baguetteBox  */
+
+baguetteBox.run('.gallery');
