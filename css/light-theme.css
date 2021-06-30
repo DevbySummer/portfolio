@@ -1,6 +1,29 @@
+@import url('./dark-theme.css');  
 
-    /* all your styles for dark mode here */
-    body {
-        color: black;
-        background: #fff;
-    }
+body {
+    color: royalblue;
+    background-color: lavender;
+}
+
+nav,
+footer {
+    background-color: pink;
+}
+
+nav a,
+.text-content_social-media-links a, 
+.footer-social-links a {
+    color: purple;
+}
+
+h1 {
+    color: yellow;
+}
+
+h1::after {
+    background-color: yellow;
+}
+
+h2 {
+    color: tomato;
+}
