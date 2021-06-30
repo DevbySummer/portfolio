@@ -1,29 +1,78 @@
 @import url('./dark-theme.css');  
 
 body {
-    color: royalblue;
-    background-color: lavender;
+    background-color: rgb(245, 245, 245);
+    color: rgb(41, 41, 41);
 }
+
+/* Navigation */
 
 nav,
 footer {
-    background-color: pink;
+    background-color: #fff;
 }
 
 nav a,
-.text-content_social-media-links a, 
+.logo a,
+li.item a,
+.text-content_social-media-links a,
+i.fab.fa-github, 
 .footer-social-links a {
-    color: purple;
+    color: rgb(65, 65, 65);
+}
+
+nav a:hover,
+.logo a:hover,
+li.item a:hover,
+.text-content_social-media-links a:hover,
+i.fab.fa-github:hover, 
+.footer-social-links a:hover {
+    color: black;
+}
+
+nav a:visited,
+.logo a:visited.
+li.item a:visited,
+.text-content_social-media-links a:visited,
+i.fab.fa-github:visited, 
+.footer-social-links a:visited {
+    color: rgb(41, 41, 41);
+}
+
+/* About Me */
+
+.about-me .avatar {
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
 }
 
 h1 {
-    color: yellow;
+    color: rgb(65, 65, 65);
 }
-
-h1::after {
-    background-color: yellow;
+h1:hover {
+    color: black;
 }
-
+h1:after {
+    background-color: rgb(65, 65, 65);
+}
+h1::after:hover {
+    background-color: black;
+}
 h2 {
-    color: tomato;
+    color: rgb(65, 65, 65);
+}
+
+/* Main */
+
+div.projects {
+    background-color: rgb(245, 245, 245);
+}
+.projects:nth-child(odd) {
+    background-color: rgba(245, 245, 245);
 }
