@@ -24,9 +24,6 @@
         line-height: 1;
         align-self: flex-end;
     }
-    /* nav {
-        margin-right: -15px;
-    } */
     nav ul {
         width: 95%;
         margin: auto;
@@ -51,7 +48,6 @@
     }
     /* About Me */
     .about-me {
-        /* flex-direction: row; */
         grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
         display: grid;
         padding-top: 60px;
@@ -81,10 +77,8 @@
     }
     .projects {
         padding-bottom: 20px;
-        /* border: 1px solid rgba(25,149,173, 0.7); */
         border-radius: 10px;
         transition: transform .2s;
-        /* background-color: rgba(25,149,173, 0.1); */
         background-color: rgba(0, 0, 0, 0.1);
     }
     .projects:hover {
